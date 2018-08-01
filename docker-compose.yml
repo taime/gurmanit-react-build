@@ -9,3 +9,7 @@ services:
         - ./docs:/usr/share/nginx/html
       ports:
         - "8080:80"
+      environment:
+      - VIRTUAL_HOST=gurmanit.ru,www.gurmanit.ru
+      - LETSENCRYPT_HOST=gurmanit.ru
+      - LETSENCRYPT_EMAIL=r@weew.ru
