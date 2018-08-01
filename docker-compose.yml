@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+    nginx:
+      build: 
+        context: .
+        dockerfile: Dockerfile.nginx
+      volumes:
+        - ./docs:/usr/share/nginx/html
+      ports:
+        - "8080:80"
